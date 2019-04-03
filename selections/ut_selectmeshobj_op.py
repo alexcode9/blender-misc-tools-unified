@@ -1,10 +1,13 @@
+import sys
+sys.path.insert(0, r'../selections')
+
 import bpy
-from .selections import selectChildrenRecursive
+from selections import selectChildrenRecursive
 
 
 class UT_OT_SelectMeshObjectOperator(bpy.types.Operator):
     bl_idname = "select.meshobjects"
-    bl_label = "Select"
+    bl_label = "Select Mesh objects"
     name = "selectmeshobjects"
 
     def execute(self, context):

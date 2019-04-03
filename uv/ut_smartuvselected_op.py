@@ -1,6 +1,10 @@
+import sys
+sys.path.insert(0, r'../selections')
+sys.path.insert(0, r'../misc')
+
 import bpy
-from .selections import selectChildrenRecursive
-from .progress import update_progress
+from selections import selectChildrenRecursive
+from progress import update_progress
 
 
 class UT_OT_SmartUVSelectedOperator(bpy.types.Operator):
